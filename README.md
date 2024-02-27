@@ -24,3 +24,11 @@ Baymax is trained on an 'Mental Health JSON dataset' and is capable of providing
 While developing Baymax, I am aware that creating a chatbot that is meant to engage with individuals on such a sensitive and serious topic such as mental health comes with serious responsibilites/consequences, Therefore, it is very important to acknowledge that the responses Baymax may generate is not comprehensive, nor is it always accurate. Baymax was created by myself only out of passion and is not based on any credible medical research or data. Please make sure to seek professional help and support in the event of a real-life mental health issue.
 
 In the future, I hope to update and improve Baymax by implementating a more user friendly interface such as a GUI, website, or mobile application to improve and ease user experience. Additionally, I want to pursue the possibilites of converting Baymax into a hybrid model with both retrieval and generative capabilities in order to further improve Baymax's ability to generate new context-specific responses in real-time.
+
+### Example of Baymax in conversation:
+<img width="961" alt="baymax1" src="https://github.com/ericlyfan/Mental-Health-Chatbot/assets/144501508/01ede210-2ec6-490d-bf11-f6d80a410160">
+<img width="962" alt="baymax2" src="https://github.com/ericlyfan/Photography-Portfolio/assets/144501508/da029c02-de09-49ac-b1ca-8ca6cade06bc">
+<img width="960" alt="baymax3" src="https://github.com/ericlyfan/Photography-Portfolio/assets/144501508/65c541c1-65b8-4e77-aadb-180c91f6106c">
+<img width="960" alt="baymax4" src="https://github.com/ericlyfan/Photography-Portfolio/assets/144501508/c06169d3-0a91-441b-8076-6a2cab0de42a">
+<img width="957" alt="baymax5" src="https://github.com/ericlyfan/Photography-Portfolio/assets/144501508/860c6f4a-1c7d-4aef-a387-536a4298e6ac">
+<img width="951" alt="baymax6" src="https://github.com/ericlyfan/Photography-Portfolio/assets/144501508/351acf8b-cd8f-4582-837c-e7a5ff355770">
