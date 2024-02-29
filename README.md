@@ -1,4 +1,4 @@
-# Mental Health Chatbot
+# Mental Health AI Chatbot
 
 ## Project Function & Interest
 
