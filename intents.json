@@ -109,7 +109,7 @@
     },
     {"tag": "suicide",
         "patterns": ["I want to kill myself", "I've thought about killing myself.", "I want to die", "I am going to kill myself", "I am going to commit suicide"],
-        "responses": ["I'm very sorry to hear that but you have so much to look forward to. Please seek help by contacting: 9152987821."]
+        "responses": ["I'm very sorry to hear that but you have so much to look forward to. Please seek help by contacting: 988."]
     }, 
     {"tag": "hate-you",
         "patterns": ["I hate you", "I don't like you", "I don't trust you"],
@@ -191,6 +191,877 @@
         "patterns": ["I want to learn about mental health.", "I want to learn more about mental health.", "I'm interested in learning about mental health."],
         "responses": ["Oh that's really great. I'd be willing to answer anything that I know about it."]
     },
+    {
+        "tag": "sadness",
+        "patterns": [
+            "I feel so lonely.",
+            "Feeling really down lately.",
+            "Just sad all the time.",
+            "Nobody seems to understand.",
+            "It's like I'm all by myself."
+        ],
+        "responses": [
+            "It's okay to feel this way, and I'm here to listen. What's been on your mind?",
+            "Feeling sad can be overwhelming. Do you want to talk about what's causing these feelings?",
+            "It's tough feeling lonely, but sharing can sometimes help. What's making you feel so isolated?",
+            "Sadness can feel heavy. If you're up for it, I'd like to hear more about what's been going on with you."
+        ]
+    },
+    {
+        "tag": "stress",
+        "patterns": [
+            "Everything's just piling up.",
+            "So stressed I can't think straight.",
+            "Burnt out and exhausted.",
+            "Feels like I'm stuck in a loop.",
+            "Can't shake off this tension."
+        ],
+        "responses": [
+            "Stress can really take a toll. Want to break down what's been contributing to it?",
+            "Feeling overwhelmed is tough. Let's try to sort through what's on your plate.",
+            "Burnout is a sign to take a step back. What's been consuming most of your energy?",
+            "Being stuck can be frustrating. Have there been any recent changes or challenges?"
+        ]
+    },
+    {
+        "tag": "worthlessness",
+        "patterns": [
+            "Nothing I do seems to matter.",
+            "Why can't I just be better?",
+            "Feeling completely useless.",
+            "It's like I don't make a difference.",
+            "Everyone's ahead, and I'm just here."
+        ],
+        "responses": [
+            "Feeling undervalued is really hard. Can you share more about why you feel this way?",
+            "It's tough feeling like you're not enough. What's been happening to make you feel this way?",
+            "You're not alone in feeling this. Let's talk about these feelings of worthlessness.",
+            "It sounds like you're being really hard on yourself. Want to discuss what's been going on?"
+        ]
+    },
+    {
+        "tag": "depression",
+        "patterns": [
+            "Just don't see the point anymore.",
+            "Everything feels so bleak.",
+            "Can't remember the last time I was happy.",
+            "It's like I'm drowning in my thoughts.",
+            "Nothing brings me joy anymore."
+        ],
+        "responses": [
+            "Feeling hopeless can be a sign of depression. Have you felt this way for long?",
+            "It's important to address these feelings. Can you tell me more about what's been making you feel so down?",
+            "Depression can make everything seem gray. Let's talk about what's been happening with you.",
+            "Joy can feel far away when you're depressed. What do you think has led to these feelings?"
+        ]
+    },
+    {
+        "tag": "happiness",
+        "patterns": [
+            "Today's been really good, actually.",
+            "Feeling pretty happy with how things are.",
+            "Got some good news that cheered me up!",
+            "Things are looking up lately.",
+            "I've been in a great mood."
+        ],
+        "responses": [
+            "That's wonderful to hear! What's been making you feel so positive?",
+            "Good days are worth celebrating. What's contributed to your happiness today?",
+            "Happy to hear that! What good news did you receive?",
+            "It's great when things start to improve. What's been going well for you?"
+        ]
+    },
+    {
+        "tag": "neutral",
+        "patterns": [
+            "Just the usual, nothing new.",
+            "Meh, it's been an average day.",
+            "Can't complain, I guess.",
+            "Same old, same old.",
+            "Nothing much, just going with the flow."
+        ],
+        "responses": [
+            "Even ordinary days have their moments. Anything you'd like to share?",
+            "Average days can sometimes bring unexpected insights. Noticed anything interesting?",
+            "It's okay to have days where not much happens. How have you been feeling about it?",
+            "Consistency can be comforting. Any small highlights you've noticed?",
+            "Going with the flow is a good approach. How's that been going for you?"
+        ]
+    },
+
+    {
+        "tag": "bipolar-disorder",
+        "patterns": [
+            "My moods swing wildly",
+            "I go from extremely happy to extremely sad",
+            "Sometimes I feel on top of the world, then suddenly hopeless",
+            "I think I might have bipolar disorder"
+        ],
+        "responses": [
+            "Experiencing extreme mood swings can be a sign of bipolar disorder, and it's important to discuss these symptoms with a healthcare provider.",
+            "Bipolar disorder is complex, but with the right treatment plan, many people lead fulfilling lives. Have you been able to seek a professional opinion?",
+            "Understanding your mood patterns is a crucial step. Keeping a mood diary can be a helpful tool to share with a mental health professional."
+        ]
+    },
+    {
+        "tag": "ocd",
+        "patterns": [
+            "I have to check things over and over",
+            "I get stuck on certain thoughts",
+            "I have rituals I can't stop doing",
+            "My thoughts are intrusive and unwanted"
+        ],
+        "responses": [
+            "OCD can be very distressing, but there are therapies like CBT that have been effective in helping people manage their symptoms.",
+            "Intrusive thoughts can be overwhelming, but it's important to remember that they don't define you or your actions.",
+            "You're not alone in this. Many people with OCD find relief through a combination of therapy and sometimes medication."
+        ]
+    },
+    {
+        "tag": "ptsd",
+        "patterns": [
+            "I keep reliving traumatic events",
+            "I have nightmares and flashbacks",
+            "Loud noises make me jump",
+            "I feel like I'm always on edge"
+        ],
+        "responses": [
+            "PTSD can be incredibly challenging to navigate, but support and treatments are available that can really make a difference.",
+            "It sounds like you're experiencing some tough symptoms. Have you been able to talk to a professional about these feelings?",
+            "Finding a therapist who specializes in trauma can provide you with coping strategies to manage your symptoms more effectively."
+        ]
+    },
+    {
+        "tag": "social-anxiety",
+        "patterns": [
+            "I'm scared of social situations",
+            "Talking to people makes me anxious",
+            "I avoid going out because I feel judged",
+            "I'm terrified of public speaking"
+        ],
+        "responses": [
+            "Feeling anxious in social situations is more common than you might think, and there are strategies that can help you cope better.",
+            "Taking small steps to expose yourself to social situations might help. It's okay to start small and gradually increase your comfort level.",
+            "Public speaking is a common fear, but like any skill, it can be improved with practice and by starting in a safe, supportive environment."
+        ]
+    },
+    {
+        "tag": "self-esteem",
+        "patterns": [
+            "I feel worthless",
+            "I don't believe in myself",
+            "Why can't I value myself",
+            "I have low self-confidence"
+        ],
+        "responses": [
+            "It's really tough to feel that way about yourself, but remember, your value isn't defined by your accomplishments or failures.",
+            "Building self-esteem is a gradual process, but it starts with challenging negative beliefs about yourself and recognizing your worth.",
+            "Everyone deserves to feel good about themselves. Maybe trying out small, daily affirmations could help you start seeing your true value."
+        ]
+    },
+    {
+        "tag": "body_image",
+        "patterns": [
+            "I hate how I look",
+            "I'm uncomfortable with my body",
+            "Why can't I look like them",
+            "I'm struggling with my body image"
+        ],
+        "responses": [
+            "It's tough feeling unhappy with your body, but remember, beauty is diverse and your worth isn't tied to your appearance.",
+            "Comparing ourselves to others can be damaging. It's important to focus on what your body can do for you, rather than just how it looks.",
+            "Consider practicing self-love and gratitude for your body's capabilities, and remember that everyone's journey with body image is unique."
+        ]
+    },
+    {
+        "tag": "eating_disorders",
+        "patterns": [
+            "I'm struggling with my eating habits",
+            "I feel guilty whenever I eat",
+            "I'm obsessed with my weight and what I eat",
+            "I can't control my eating behavior"
+        ],
+        "responses": [
+            "Eating disorders are serious but treatable, and it's important to seek professional help to overcome these challenges.",
+            "You're not alone in this, and there are resources and support systems that can help you through recovery.",
+            "Recovery from an eating disorder is a journey, and it's okay to ask for help along the way. Consider speaking with a healthcare provider who specializes in eating disorders."
+        ]
+    },
+    {
+        "tag": "existential_crisis",
+        "patterns": [
+            "What's the point of everything?",
+            "I'm questioning the meaning of life",
+            "I feel lost and without purpose",
+            "Life feels meaningless to me"
+        ],
+        "responses": [
+            "It's natural to question life's meaning and your place in the world, especially during tough times.",
+            "Finding meaning can be a personal journey, and it can help to explore different interests, values, and connections.",
+            "Talking to a therapist about these feelings can provide clarity and support as you navigate through your existential questions."
+        ]
+    },
+    {
+        "tag": "work_stress",
+        "patterns": [
+            "My job is stressing me out",
+            "I can't handle the pressure at work",
+            "I'm burnt out from work",
+            "Work is affecting my mental health"
+        ],
+        "responses": [
+            "Work-related stress is a common issue, but it's important to find healthy ways to manage it.",
+            "Setting boundaries and taking regular breaks can help reduce stress and prevent burnout.",
+            "If work stress is overwhelming, it might be helpful to talk to a professional who can provide coping strategies and support."
+        ]
+    },
+    {
+        "tag": "anger_management",
+        "patterns": [
+            "I get angry too easily",
+            "I can't control my temper",
+            "I lash out at people I care about",
+            "My anger is ruining my relationships"
+        ],
+        "responses": [
+            "It sounds like dealing with anger is really challenging for you. Finding healthy outlets for your emotions can make a big difference.",
+            "Anger is a natural emotion, but managing it in a healthy way is crucial. Have you tried techniques like deep breathing or taking a time-out?",
+            "Sometimes underlying issues can contribute to anger. It might be helpful to explore these feelings with a professional."
+        ]
+    },
+    {
+        "tag": "loneliness",
+        "patterns": [
+            "I feel so alone",
+            "No one understands me",
+            "I don't have any real friends",
+            "Why do I feel so isolated?"
+        ],
+        "responses": [
+            "Feeling lonely can be really hard, but there are ways to connect with others and build meaningful relationships.",
+            "Sometimes reaching out to someone, joining a group with similar interests, or volunteering can help reduce feelings of loneliness.",
+            "It's important to remember you're not alone in feeling lonely. Many people experience this, and there are support systems that can help."
+        ]
+    },
+    {
+        "tag": "perfectionism",
+        "patterns": [
+            "I have to do everything perfectly",
+            "I'm never satisfied with my work",
+            "Why can't I accept anything less than perfect?",
+            "My need for perfection is stressing me out"
+        ],
+        "responses": [
+            "Striving for perfection can be exhausting and often unattainable. It's okay to aim for 'good enough' and recognize your efforts.",
+            "Perfectionism can lead to a lot of stress. Remember, making mistakes is a part of learning and growing.",
+            "It might help to set more realistic goals for yourself and celebrate the progress you make, not just the end result."
+        ]
+    },
+    {
+        "tag": "imposter_syndrome",
+        "patterns": [
+            "I feel like a fraud at work",
+            "Everyone will realize I'm not as competent as they think",
+            "I don't deserve my job",
+            "Why do I feel like I'm faking it?"
+        ],
+        "responses": [
+            "Feeling like an imposter is more common than you might think, especially among successful people. It's important to acknowledge your achievements and hard work.",
+            "Imposter syndrome can be tough, but try to remember that your skills and successes are real and well-deserved.",
+            "Talking about these feelings with someone you trust or a professional can provide reassurance and help you see your true value."
+        ]
+    },
+    {
+        "tag": "burnout",
+        "patterns": [
+            "I'm completely exhausted from work",
+            "I've lost all motivation for my job",
+            "My job feels so overwhelming",
+            "Why do I feel burnt out all the time?"
+        ],
+        "responses": [
+            "Burnout can be really tough, and it's important to take steps to care for your mental and physical health.",
+            "Finding a balance between work and rest is crucial. Have you considered setting more boundaries around your work time?",
+            "Sometimes talking to a supervisor about workload or finding stress-reduction techniques can be helpful in managing burnout."
+        ]
+    },
+    {
+        "tag": "relationship_issues",
+        "patterns": [
+            "I'm having trouble in my relationship",
+            "My partner and I argue all the time",
+            "I feel disconnected from my partner",
+            "How can we improve our communication?"
+        ],
+        "responses": [
+            "Relationships can be challenging, and it's important to communicate openly and honestly with your partner about your feelings.",
+            "Consider couples counseling as it can provide tools and strategies to improve communication and strengthen your relationship.",
+            "Taking time to understand each other's perspectives and needs can make a big difference in resolving conflicts."
+        ]
+    },
+    {
+        "tag": "parenting_challenges",
+        "patterns": [
+            "Parenting is so hard",
+            "I'm struggling with my kids",
+            "How do I handle my child's behavior?",
+            "I feel like a bad parent"
+        ],
+        "responses": [
+            "Parenting is one of the toughest jobs, and feeling overwhelmed is normal. It's okay to ask for help or support.",
+            "Every parent faces challenges. Seeking advice from parenting resources or joining a support group can be very helpful.",
+            "Remember to take care of yourself too. A happy parent is more equipped to handle the ups and downs of parenting."
+        ]
+    },
+    {
+        "tag": "identity_crisis",
+        "patterns": [
+            "I'm questioning my identity",
+            "Who am I really?",
+            "I feel lost and unsure about myself",
+            "My sense of self is changing"
+        ],
+        "responses": [
+            "It's natural to question your identity and go through periods of self-discovery. This can be a path to understanding yourself better.",
+            "An identity crisis can be unsettling but also an opportunity for growth. Consider exploring your thoughts and feelings through journaling or therapy.",
+            "Remember, it's okay to not have all the answers right now. Give yourself permission to explore and change."
+        ]
+    },
+    {
+        "tag": "financial_stress",
+        "patterns": [
+            "I'm worried about money all the time",
+            "How can I deal with financial stress?",
+            "My debts are overwhelming me",
+            "I'm scared about my financial future"
+        ],
+        "responses": [
+            "Financial stress is incredibly tough, but there are strategies to manage it, like creating a budget plan or seeking financial advice.",
+            "It's important to tackle financial stress step by step. Small, manageable goals can lead to big changes over time.",
+            "Remember, seeking support from financial counselors or support groups can provide valuable guidance and reduce the burden."
+        ]
+    },
+    {
+        "tag": "chronic_illness",
+        "patterns": [
+            "Dealing with my chronic illness is so hard",
+            "My health issues are affecting my mental health",
+            "I feel defined by my illness",
+            "How can I cope with a chronic condition?"
+        ],
+        "responses": [
+            "Living with a chronic illness can be incredibly challenging, but finding coping strategies that work for you is key.",
+            "It's important to seek support, whether it's from healthcare professionals, support groups, or loved ones.",
+            "Remember to celebrate the small victories and be kind to yourself on the tough days."
+        ]
+    },
+    {
+        "tag": "cultural_identity",
+        "patterns": [
+            "I'm struggling with my cultural identity",
+            "I feel caught between two cultures",
+            "How can I embrace my cultural heritage?",
+            "I'm experiencing cultural dissonance"
+        ],
+        "responses": [
+            "Navigating cultural identity can be complex, but it's also a rich source of diversity and strength.",
+            "Exploring and embracing both cultures can be a rewarding journey of self-discovery and acceptance.",
+            "Seeking out communities or individuals who share similar experiences can provide support and understanding."
+        ]
+    },
+    {
+        "tag": "climate_anxiety",
+        "patterns": [
+            "I'm really worried about climate change",
+            "The state of the environment makes me anxious",
+            "How can I deal with my fear for the planet's future?",
+            "I feel helpless about environmental issues"
+        ],
+        "responses": [
+            "Climate anxiety is a growing concern, and it's understandable to feel overwhelmed by environmental issues.",
+            "Focusing on small, actionable steps you can take to contribute to environmental conservation can be empowering.",
+            "Connecting with like-minded communities and staying informed about positive environmental actions can also help alleviate some of the anxiety."
+        ]
+    },
+    {
+        "tag": "digital_wellbeing",
+        "patterns": [
+            "I spend too much time on my phone",
+            "Social media is affecting my mental health",
+            "How can I reduce my screen time?",
+            "I feel addicted to the internet"
+        ],
+        "responses": [
+            "Digital wellbeing is important for maintaining a healthy balance in our increasingly connected world.",
+            "Setting specific goals to limit screen time and using apps that monitor usage can be helpful first steps.",
+            "Finding offline activities that you enjoy can also help reduce reliance on digital devices and improve mental health."
+        ]
+    },
+    {
+        "tag": "time_management",
+        "patterns": [
+            "I'm struggling to manage my time effectively",
+            "How can I improve my time management skills?",
+            "I always feel like I'm running out of time",
+            "I can't seem to get my schedule under control"
+        ],
+        "responses": [
+            "Improving time management takes practice. Start by prioritizing tasks and setting realistic goals.",
+            "Consider using tools like planners or digital apps to organize your tasks and monitor your progress.",
+            "Remember, it's also important to include breaks and self-care in your schedule to maintain your well-being."
+        ]
+    },
+    {
+        "tag": "personal_growth",
+        "patterns": [
+            "I want to work on my personal development",
+            "How can I achieve personal growth?",
+            "I feel stuck in my personal life",
+            "What steps can I take for self-improvement?"
+        ],
+        "responses": [
+            "Personal growth is a lifelong journey. Start by setting clear, achievable goals for yourself.",
+            "Reflect on your values and interests to guide your growth. Learning new skills or hobbies can be a great starting point.",
+            "Don't forget to celebrate your progress, no matter how small. Each step forward is a success in its own right."
+        ]
+    },
+    {
+        "tag": "career_uncertainty",
+        "patterns": [
+            "I'm unsure about my career path",
+            "What should I do if I'm not happy with my job?",
+            "I'm thinking of changing careers but I'm scared",
+            "How can I find a career that fulfills me?"
+        ],
+        "responses": [
+            "Career uncertainty is quite common. Start by assessing your skills, interests, and values to explore suitable paths.",
+            "Consider speaking with a career counselor or mentor for guidance and support.",
+            "It's okay to explore different options. Sometimes, trying out new roles or fields can provide valuable insights into what truly motivates you."
+        ]
+    },
+    {
+        "tag": "creativity_blocks",
+        "patterns": [
+            "I'm experiencing a creative block",
+            "How can I overcome writer's block?",
+            "My creativity seems to have dried up",
+            "What can I do to get my creativity flowing again?"
+        ],
+        "responses": [
+            "Creative blocks are frustrating but temporary. Try changing your routine or environment to spark inspiration.",
+            "Engaging in different creative activities or hobbies can also help stimulate your imagination.",
+            "Remember, taking a break and giving yourself permission to rest can sometimes be the best way to reignite your creative spark."
+        ]
+    },
+    {
+        "tag": "educational_challenges",
+        "patterns": [
+            "I'm struggling with my studies",
+            "How can I improve my academic performance?",
+            "School is overwhelming me",
+            "I can't keep up with my coursework"
+        ],
+        "responses": [
+            "Educational challenges can be daunting, but there are strategies to help manage the workload.",
+            "Organizing your study time, seeking help from tutors or peers, and practicing effective study techniques can make a big difference.",
+            "Remember, it's important to balance your studies with breaks and self-care to maintain your overall well-being."
+        ]
+    },
+    {
+        "tag": "stress_coping_strategies",
+        "patterns": [
+            "I'm overwhelmed with stress, how can I cope?",
+            "What are effective ways to manage stress?",
+            "Can you suggest any immediate stress relief techniques?",
+            "How do I deal with stress in a healthy way?"
+        ],
+        "responses": [
+            "Effective stress management starts with identifying stressors and understanding how you react to them.",
+            "Breathing exercises, physical activity, and setting aside time for hobbies can provide immediate relief from stress.",
+            "Long-term strategies include developing a solid support network, practicing time management, and seeking professional help if needed."
+        ]
+    },
+    {
+        "tag": "overcoming_procrastination",
+        "patterns": [
+            "I always put things off until the last minute",
+            "How can I stop procrastinating?",
+            "Procrastination is affecting my productivity, any advice?",
+            "What are some effective strategies to overcome procrastination?"
+        ],
+        "responses": [
+            "Breaking tasks into smaller, more manageable steps can help reduce the overwhelm that often leads to procrastination.",
+            "Setting clear deadlines and rewarding yourself for meeting them can also improve motivation and productivity.",
+            "Understanding the underlying reasons for your procrastination, such as fear of failure or lack of interest, can be key to overcoming it."
+        ]
+    },
+    {
+        "tag": "dealing_with_rejection",
+        "patterns": [
+            "I take rejection very personally, how can I cope better?",
+            "Every time I face rejection, it devastates me. Any suggestions?",
+            "How can I build resilience against rejection?",
+            "Rejection affects my self-esteem, what should I do?"
+        ],
+        "responses": [
+            "Rejection is a part of life and often not a reflection of your worth. Try to view it as a learning opportunity or a stepping stone.",
+            "Practicing self-compassion and reminding yourself of your strengths and accomplishments can help cushion the blow of rejection.",
+            "Building a support network of friends and family can provide encouragement and perspective when dealing with rejection."
+        ]
+    },
+    {
+        "tag": "anxiety",
+        "patterns": [
+        "Feeling incredibly anxious lately.",
+        "Anxiety's been hitting me hard.",
+        "Can't shake this anxious feeling.",
+        "Everything's making me anxious."
+        ],
+        "responses": [
+        "Anxiety can be really tough. What's been on your mind lately?",
+        "It's okay to feel anxious, but let's talk about what's triggering it.",
+        "Anxiety is often a response to our worries. Want to share what's bothering you?",
+        "It's important to address what's making you anxious. Can we explore that together?"
+        ]
+    },
+    {
+        "tag": "reluctance",
+        "patterns": [
+        "I'd rather not talk about it.",
+        "Just leave me be, please.",
+        "Opening up is really hard for me.",
+        "I don't feel like talking right now."
+        ],
+        "responses": [
+        "It's perfectly okay to take your time. I'm here when you're ready.",
+        "I'm here to support you, in your own time and pace.",
+        "It's important to feel safe before opening up. I'm here, no pressure.",
+        "When you're ready to talk, I'll be here to listen. Take all the time you need."
+        ]
+    },
+    {
+        "tag": "insomnia",
+        "patterns": [
+        "Struggling with insomnia lately.",
+        "Sleep just isn't happening for me.",
+        "Been a while since I had a good night's sleep.",
+        "My sleep schedule is completely off."
+        ],
+        "responses": [
+        "Insomnia can be really challenging. Have you noticed what might be causing it?",
+        "Lack of sleep affects so much. Let's try to figure out what's behind it.",
+        "Not being able to sleep is tough. Are there things on your mind preventing rest?",
+        "Sleep issues can be complex. Do you want to explore possible reasons together?"
+        ]
+    },
+    {
+        "tag": "fear",
+        "patterns": [
+        "Everything's just making me scared.",
+        "I don't know how to handle this fear.",
+        "Feeling frightened and I can't explain why.",
+        "Fear's been overwhelming me."
+        ],
+        "responses": [
+        "Feeling scared is a natural response, but you're not alone. What's been triggering it?",
+        "Let's take it one step at a time. What's the most immediate thing that's scaring you?",
+        "Understanding our fears can help. Is there something specific that's been bothering you?",
+        "Fear can feel isolating, but I'm here to help. Want to talk about what's been happening?"
+        ]
+    },
+    {
+        "tag": "grief",
+        "patterns": [
+        "I've recently lost someone close.",
+        "Dealing with the death of a loved one.",
+        "Grief has been really hard on me.",
+        "It's tough coping with this loss.",
+        "I can't get over the loss of someone",
+        "How do I cope with this grief?",
+        "The pain of losing someone never goes away",
+        "I feel stuck in my sadness"
+        ],
+        "responses": [
+        "I'm so sorry for your loss. Whenever you're ready, I'm here to listen.",
+        "Grief can feel overwhelming. I'm here to support you through this.",
+        "It's okay to grieve in your own way. Let's talk about your feelings when you're ready.",
+        "Loss is incredibly hard. I'm here to help you process your emotions at your own pace.",
+        "Grief can be a long and difficult process, and it's okay to feel a range of emotions during this time.",
+        "Everyone's journey through grief is unique, and it's important to allow yourself to experience these feelings without judgment.",
+        "Seeking support from friends, family, or a grief counselor can be very helpful in navigating these tough emotions."
+        ]
+    },
+    {
+        "tag": "misunderstood",
+        "patterns": [
+        "It feels like you just don't get me.",
+        "How could a program understand human feelings?",
+        "You can't grasp what I'm going through.",
+        "It feels like talking to you is pointless."
+        ],
+        "responses": [
+        "I'm here to support you, even if I might not understand everything.",
+        "I want to help as best as I can. Let's try to find a way to communicate that works for you.",
+        "I'm sorry if it seems like I'm not getting it. I'm here to listen and help in any way I can.",
+        "Feeling understood is important. I'm here to provide support and listen to your experiences."
+        ]
+    },
+    {
+        "tag": "conclusion",
+        "patterns": [
+        "We've covered everything.",
+        "I have nothing more to add.",
+        "That wraps up my points.",
+        "I've said all I needed to.",
+        "That's the entirety of it."
+        ],
+        "responses": [
+        "Understood, I've taken note of everything. Until next time.",
+        "Got it, it seems we've covered all bases today. Take care.",
+        "Wishing you a wonderful day ahead. Looking forward to our next conversation.",
+        "All set then. Hope you have a fantastic day ahead.",
+        "Acknowledged. Hope the rest of your day goes well."
+        ]
+    },
+    {
+        "tag": "crisis",
+        "patterns": [
+        "I'm considering ending my life.",
+        "Suicidal thoughts have crossed my mind.",
+        "I don't see any reason to continue living.",
+        "I'm contemplating suicide.",
+        "I'm thinking about taking my own life."
+        ],
+        "responses": [
+        "It's crucial to talk to someone who can help. Please reach out to a professional or call 988 for immediate support."
+        ]
+    },
+    {
+        "tag": "dislike",
+        "patterns": [
+        "I can't stand you.",
+        "You're not my favorite.",
+        "I don't feel comfortable around you."
+        ],
+        "responses": [
+        "I apologize if I've upset you. My goal is to assist, not to offend.",
+        "I'm sorry to hear that. I aim to be helpful, so please let me know how I can improve."
+        ]
+    },
+    {
+        "tag": "perceived-hate",
+        "patterns": [
+        "You must despise me.",
+        "It feels like you can't stand me.",
+        "Do you have something against me?"
+        ],
+        "responses": [
+        "What makes you feel that way?",
+        "I assure you, my intent is to support, not to judge or dislike."
+        ]
+    },
+    {
+        "tag": "general",
+        "patterns": [
+        "I'm stressed about exams.",
+        "My friends are on my mind.",
+        "Dealing with relationship issues.",
+        "Worries about my significant other.",
+        "Family matters are troubling me.",
+        "Concerns about finances.",
+        "Facing financial difficulties."
+        ],
+        "responses": [
+        "I understand. Would you like to elaborate?",
+        "That sounds significant. Can you share more details?",
+        "Let's delve deeper into this. What exactly is happening?",
+        "I'm here to listen. What's been going on with that?",
+        "I'm all ears. Feel free to explain further."
+        ]
+    },
+    {
+        "tag": "seriousness",
+        "patterns": [
+        "Can you lighten the mood with a joke?",
+        "I could use a good laugh, got a joke?"
+        ],
+        "responses": [
+        "While humor is valuable, let's focus on what's currently important."
+        ]
+    },
+    {
+        "tag": "redundancy",
+        "patterns": [
+        "This sounds familiar.",
+        "Haven't you mentioned this before?",
+        "Are we going in circles?"
+        ],
+        "responses": [
+        "My apologies for any repetition. I'll ensure it doesn't happen again."
+        ]
+    },
+    {
+        "tag": "misunderstanding",
+        "patterns": [
+        "I'm confused by your response.",
+        "That didn't make sense to me.",
+        "I think you misunderstood.",
+        "Your answer seems off."
+        ],
+        "responses": [
+        "I apologize for the confusion. Let's go over it again."
+        ]
+    },
+    {
+        "tag": "disparagement",
+        "patterns": [
+        "Do you even understand?",
+        "This is nonsense.",
+        "You're not making sense.",
+        "Do you even know what you're saying?"
+        ],
+        "responses": [
+        "I'm sorry if my response wasn't helpful. Let me try to clarify."
+        ]
+    },
+    {
+        "tag": "presence",
+        "patterns": [
+        "What's your location?",
+        "Where do you exist?",
+        "How can I find you?"
+        ],
+        "responses": [
+        "I exist in the digital realm, ready to assist you.",
+        "I'm just a few clicks away, wherever you have internet access."
+        ]
+    },
+    {
+        "tag": "diversion",
+        "patterns": [
+        "Let's change the subject.",
+        "I'd prefer to discuss something different.",
+        "Let's shift our focus."
+        ],
+        "responses": [
+        "Of course. What topic would you like to explore?",
+        "Sure thing. What's on your mind?"
+        ]
+    },
+    {
+        "tag": "loneliness",
+        "patterns": [
+        "I feel isolated.",
+        "It seems like I have no one.",
+        "Why is it hard for me to make friends?"
+        ],
+        "responses": [
+        "Feeling isolated can be tough. Let's talk about it. What do you think is the barrier to making friends?"
+        ]
+    },
+    {
+        "tag": "inquiry",
+        "patterns": [
+        "I have a question for you.",
+        "I'm curious about something."
+        ],
+        "responses": [
+        "I'm here to help. What's your question?",
+        "Feel free to ask. I'll do my best to provide an answer."
+        ]
+    },
+    {
+        "tag": "stress-school",
+        "patterns": [
+        "The pressure of exams is overwhelming.",
+        "I'm anxious about my upcoming tests."
+        ],
+        "responses": [
+        "Exams can indeed be stressful. Have you tried any strategies to alleviate the stress?"
+        ]
+    },
+    {
+        "tag": "no-strategy",
+        "patterns": [
+        "I haven't really taken any steps.",
+        "No, I haven't done anything about it.",
+        "I'm not sure what to do."
+        ],
+        "responses": [
+        "It's understandable to feel overwhelmed. Would you like some suggestions on how to manage exam stress?"
+        ]
+    },
+    {
+        "tag": "interest-in-solutions",
+        "patterns": [
+        "Yes, I'm open to suggestions.",
+        "Please share some tips.",
+        "I'm interested in hearing your advice."
+        ],
+        "responses": [
+        "Taking regular breaks is essential. Continuous study can lead to burnout. How about scheduling short breaks between study sessions?"
+        ]
+    },
+    {
+        "tag": "acknowledgment",
+        "patterns": [
+        "A break does sound good.",
+        "I hadn't considered taking more breaks."
+        ],
+        "responses": [
+        "Incorporating relaxation techniques, like meditation, can also be very beneficial. It helps in clearing the mind and reducing stress."
+        ]
+    },
+    {
+        "tag": "considering-meditation",
+        "patterns": [
+        "Meditation could be worth trying.",
+        "I've never tried meditation before."
+        ],
+        "responses": [
+        "Meditation doesn't have to be lengthy or complex. Even just a few minutes of focused breathing can make a big difference."
+        ]
+    },
+    {
+        "tag": "post-meditation",
+        "patterns": [
+        "Meditation really helped me relax.",
+        "I feel more at ease after meditating."
+        ],
+        "responses": [
+        "I'm glad to hear that. Remember, focusing on what you can control and letting go of what you can't is key to managing stress effectively."
+        ]
+    },
+    {
+        "tag": "gratitude",
+        "patterns": [
+        "Thanks for your help. I'll keep practicing.",
+        "I appreciate the advice and will continue to apply it."
+        ],
+        "responses": [
+        "You're welcome! Feel free to reach out if you have more questions or need further assistance."
+        ]
+    },
+    {
+        "tag": "seeking-advice",
+        "patterns": [
+        "I could use some guidance.",
+        "I'm looking for some advice."
+        ],
+        "responses": [
+        "I'm here to help. What specific advice are you looking for?"
+        ]
+    },
+    {
+        "tag": "mental-health-education",
+        "patterns": [
+        "I'm curious about mental health topics.",
+        "I'd like to understand mental health better."
+        ],
+        "responses": [
+        "That's a valuable area to explore. There's a lot to learn about mental health, and I'm here to share what I know."
+        ]
+    },        
     {"tag": "mental-health-fact",
         "patterns": ["Tell me a fact about mental health", "Tell me another fact about mental health"],
         "responses": ["According to a UNICEF report, One in seven Indians between 15-24 years of age feels depressed", "1 in 5 young people (age 13-18) has or will develop a mental illness in their lifetime.", "Depression is the leading cause of disability worldwide."]
